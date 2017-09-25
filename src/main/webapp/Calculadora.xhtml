@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>Calculadora3000</title>
+</h:head>
+<h:body>
+	<h:form>
+		<br />
+		<br />
+		<h:inputText name="campo1" id="campo1"
+			value="Escreva o primeiro valor" />
+		<h:inputText name="campo2" id="campo2" value="Escreva o segundo valor" />
+		<h:commandButton name="btn1" id="btn1" value="soma"
+			action="#{calculadoraControler.soma}" />
+		<h:outputLabel value="Resultado:#{calculadoraController.soma}" />
+		<br />
+		<br />
+		<h:inputText name="campo4" id="campo4"
+			value="Escreva o primeiro valor" />
+		<h:inputText name="campo5" id="campo5" value="Escreva o segundo valor" />
+		<h:commandButton name="btn2" id="btn2" value="subtração"
+			action="#{calculadoraControler.subtracao}" />
+		<h:outputLabel value="Resultado:#{calculadoraControler.subtracao}" />
+		<br />
+		<br />
+		<h:inputText name="campo7" id="campo7"
+			value="Escreva o primeiro valor" />
+		<h:inputText name="campo8" id="campo8" value="Escreva o segundo valor" />
+		<h:commandButton name="btn3" id="btn3" value="multiplicão"
+			action="#{calculadoraControler.multiplicacao}" />
+		<h:outputLabel value="Resultado:#{calculadoraControler.multiplicacao}" />
+		<br />
+		<br />
+		<h:inputText name="campo10" id="campo10"
+			value="Escreva o primeiro valor" />
+		<h:inputText name="campo11" id="campo11"
+			value="Escreva o segundo valor" />
+		<h:commandButton name="btn4" id="btn4" value="divisão"
+			action="#{calculadoraControler.divisao}" />
+		<h:outputLabel value="Resultado:#{calculadoraControler.divisao}" />
+
+	</h:form>
+</h:body>
+</html>
