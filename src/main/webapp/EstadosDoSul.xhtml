@@ -7,11 +7,10 @@
 </h:head>
 <h:body>
 	<h:form>
-		<h:selectOneMenu value="">
-			<f:selectItem itemValue="1" itemLabel="PR" />
-			<f:selectItem itemValue="2" itemLabel="SC" />
-			<f:selectItem itemValue="3" itemLabel="RS" />
-		</h:selectOneMenu>
+		<h:outputLabel value="Estados do Sul do Brasil" />
+			<h:selectOneMenu id="estadosSul" value="#{estadosDoSulController.uf}">
+				<f:selectItems value="#{estadosDoSulController.listaUf}"/>
+			</h:selectOneMenu>
 	</h:form>
 </h:body>
 </html>
