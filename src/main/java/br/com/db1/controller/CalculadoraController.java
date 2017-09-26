@@ -17,7 +17,7 @@ public class CalculadoraController {
 	}
 
 	public void divisao() {
-		resultado = valor1 / valor2;
+	resultado = valor1 / valor2;
 	}
 
 	public void subtracao() {
